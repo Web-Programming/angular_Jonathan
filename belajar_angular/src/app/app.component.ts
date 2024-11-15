@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-housing-location',
+  selector: 'app-root',
   standalone: true,
-  imports: [],
-  template: `
-    <p>
-      housing-location works!
-    </p>
-  `,
-  styleUrl: './housing-location.component.css'
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
-export class HousingLocationComponent {
-
+export class AppComponent {
+  title = 'belajar_angular';
 }
