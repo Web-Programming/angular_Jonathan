@@ -1,12 +1,8 @@
-<section>
-  <form action="">
-      <input type="text" placeholder="Filter by city">
-      <button class="primary" type="button">Search</button>
-  </form>
-</section>
-<section class="results">
-  <!-- memanggil component housing-location -->
-  <app-housing-location *ngFor="let housingLocation of housingLocationList" [housingLocation] = "housingLocation">
-
-  </app-housing-location>
-</section>
+<main>
+  <header class="brand-name">
+    <img src="/img/logo-umdp.png" height="60" class="brand-logo">
+  </header>
+  <section class="content">
+    <router-outlet />
+  </section>
+</main>
