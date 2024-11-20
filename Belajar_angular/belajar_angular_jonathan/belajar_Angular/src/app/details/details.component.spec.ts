@@ -7,7 +7,7 @@ describe('DetailsComponent', () => {
   let fixture: ComponentFixture<DetailsComponent>;
 
   beforeEach(async () => {
-    await TestBed.configureTes1tingModule({
+    await TestBed.configureTestingModule({
       imports: [DetailsComponent]
     })
     .compileComponents();
